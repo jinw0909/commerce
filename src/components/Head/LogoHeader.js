@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import logo from '../../image/logo.png';
+import logo from '../../image/cosmetic-logo.png';
 
 const Wrapper = styled.div`
     width: 100%;

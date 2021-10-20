@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { MainTitle, ProductListItem } from '../components/Content/';
 import styled from 'styled-components';
 import { BannerGroup } from '../components/Banner/';
@@ -47,7 +47,7 @@ function HomeScreen({cartQtyUp}) {
     }, []);
 
     return(
-        <>
+        <Fragment>
         <BannerGroup bannerList = {[
             { filename: "sample_banner1.png", path: "/product/detail/1" },
             { filename: "sample_banner2.png", path: "/product/detail/2" },
@@ -92,7 +92,7 @@ function HomeScreen({cartQtyUp}) {
                 )}
             </ProductWrapper>
         </Container>
-        </>
+        </Fragment>
     );
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Link, useParams } from 'react-router-dom';
 import { MainTitle, ProductDetailItem, ProductDetailDescription } from '../components/Content';
@@ -185,7 +185,7 @@ function ProductDetailScreen({cartQtyUp}) {
                 // 로딩 진행 중 (미완료)
                 <Message>상품 대기 중...</Message>
             ) : detail ? (
-            <>
+            <Fragment>
             <ProductWrapper>
                 <ProductImage src={detail.prod_img_url}/>
                 <InfoView>
@@ -207,7 +207,7 @@ function ProductDetailScreen({cartQtyUp}) {
                 <ContentTitle>HOW TO USE</ContentTitle>
                 <ContentTextView>{detail.prod_usage}</ContentTextView>
             </DetailWrapper>
-            </>
+            </Fragment>
             ) : (
                 <Message>존재하지 않는 상품입니다</Message>
             )}
