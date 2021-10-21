@@ -49,8 +49,8 @@ function HomeScreen({cartQtyUp}) {
     return(
         <Fragment>
         <BannerGroup bannerList = {[
-            { filename: "sample_banner1.png", path: "/product/detail/1" },
-            { filename: "sample_banner2.png", path: "/product/detail/2" },
+            { filename: "cosmetic-banner-01.png", path: "/product/detail/9" },
+            { filename: "cosmetic-banner-02.png", path: "/product/detail/17" },
             { filename: "sample_banner3.png", path: "/product/detail/3" },
             { filename: "sample_banner4.png", path: "/product/detail/4" }
         ]}/>
